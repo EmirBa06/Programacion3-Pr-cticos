@@ -1,0 +1,13 @@
+
+form .radio-group {
+    display: flex;
+    gap: 20px;          
+    align-items: center;
+}
+
+form .radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;           
+    cursor: pointer;
+}

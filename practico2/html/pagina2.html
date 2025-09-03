@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/practico2/static/css/pagina1.css">
+    <link rel="stylesheet" href="/practico2/static/css/pagina2.css">
+</head>
+<body>
+    <header>
+        <div>
+        <h1>Compañía Argentina</h1>
+        <h2>Gestión de Vuelos</h2>
+        <nav>
+            <a href="#">Registrar usuario </a> 
+            <a href="#">Consultar vuelos disponibles/reservar </a>
+            <a href="#">Ver reservas realizadas </a>
+            <a href="#">Eliminar reservas realizadas </a>
+        </nav>
+    </div>
+    </header>
+    <form action="pagina2.html">
+        <h2>Formulario de Registro de Reserva: </h2>
+        <div>
+            <label for="origen">Origen:</label>
+            <input type="text" id="origen"  value="Córdoba" disabled>
+            
+        </div>
+        <div>
+            <label for="Destino">Destino:</label>
+            <input type="text" id="Destino" value="Tucumán" disabled>
+        </div>
+        
+        <div>
+            <label for="Fecha">Fecha de vuelo</label>
+            <input type="date" id="Fecha" disabled>
+        </div>
+        
+        <div>
+            <label for="hora">Hora de vuelo</label>
+            <input type="time" value="18:00" id="hora" disabled>
+        </div>
+        
+        <div>
+            <label for="Clase">Clase:</label>
+            <select name="Selección de Clase" id="Clase">
+                <option value="Ejecutiva">Ejecutiva</option>
+                <option value="Económica">Económica</option>
+            </select>
+        </div>
+        
+        <div>
+            <label for="CantidadPasajes">Cantidad de Pasajes</label>
+            <input type="number" min="1" max="50" id="CantidadPasajes" required>
+        </div>
+       
+        <div>
+            <label for="Ubicación">Selección de Ubicación:</label>
+            <select name="Selección de Ubicación" id="Ubicación">
+                <option value="Ventanilla">Ventanilla</option>
+                <option value="Centro">Centro</option>
+                <option value="Pasillo">Pasillo</option>
+            </select>
+        </div>
+        
+        <div>
+            <label for="Silla">Selección de Nro de Silla:</label>
+            <input type="number" min="1" max="50" id="Silla">
+        </div>
+        
+        <div>
+            <label for="Nombre">Apellido y Nombre:</label>
+            <input type="text" maxlength="100" required id="Nombre">
+        </div>
+        
+        <div>
+            <label for="DNI">DNI:</label>
+            <input type="number" min="10000000" max="99999999" id="DNI" required>
+        </div>
+        
+        <div>
+            <label for="Nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="Nacimiento">
+        </div>
+        
+        <div class="radio-group">
+            <label >sexo:</label> 
+            <label>
+                <input type="radio" name="sexo" value="M"> M
+            </label>
+            <label>
+                <input type="radio" name="sexo" value="F"> F
+            </label>
+        </div>
+        <div>
+            <input type="reset" value="Cancelar">
+            <input type="submit" value="Aceptar">
+        </div>
+
+    </form>
+
+    <footer>
+        <p>"Sitio Oficial de Compañía Argentina-2025"</p>
+    </footer>
+</body>
+</html>
