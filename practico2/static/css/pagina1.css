@@ -1,0 +1,121 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f8fb;
+    color: #333;
+}
+
+body {
+    min-height: 100vh;      
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;               
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header {
+    background: linear-gradient(135deg, #0077b6, #00b4d8);
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header h2 {
+    margin: 5px 0 0;
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
+/* === Navegación === */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 12px 0;
+}
+
+nav a {
+    background-color: #023e8a;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    transition: 0.3s;
+    gap: 20px;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #0077b6;
+}
+
+/* === Formulario === */
+form {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;  
+    gap: 20px;
+    width: 100%;
+    max-width: 400px;        /* más responsivo */
+    margin: 50px auto;         
+    background: white;         
+    border-radius: 10px;       
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+form input, 
+form select, 
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+form input:focus, 
+form select:focus, 
+form textarea:focus {
+    border-color: #0077b6;
+    outline: none;
+    box-shadow: 0px 0px 6px rgba(0, 119, 182, 0.5);
+}
+
+form button {
+    background: #0077b6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #023e8a;
+}
+
+/* === Footer === */
+footer {
+    margin-top: auto;
+    padding: 15px;
+    background-color: #023e8a;
+    color: white;
+    text-align: center;
+}
